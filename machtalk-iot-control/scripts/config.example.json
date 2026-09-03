@@ -1,0 +1,32 @@
+{
+  "__README__": [
+    "Copy this file to config.json and fill in YOUR OWN values.",
+    "config.json is gitignored on purpose - never commit or share it.",
+    "See references/REVERSE-ENGINEERING.md for how to obtain each field.",
+    "Every value below is a placeholder, not a real credential."
+  ],
+
+  "phone": "YOUR_LOGIN_PHONE_NUMBER",
+  "password": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "auth_cred": "YOUR_AUTH_CRED_HEX",
+  "device_id": "YOUR_DEVICE_ID",
+
+  "app_id": 5,
+  "auth_host": "nls.machtalk.net",
+  "auth_port": 6779,
+
+  "__attributes_note__": [
+    "dpid -> display metadata, used only for pretty-printing.",
+    "The values below are for a machtalk WATER HEATER.",
+    "For a different device, derive your own table -",
+    "see references/REVERSE-ENGINEERING.md section 5."
+  ],
+  "primary": ["101", "104", "102", "106", "254"],
+  "attributes": {
+    "101": { "name": "Power",       "unit": "",    "map": { "0": "off", "1": "on" },       "writable": true  },
+    "102": { "name": "Target temp", "unit": "\u00b0C",                                      "writable": true  },
+    "104": { "name": "Water temp",  "unit": "\u00b0C",                                      "writable": false },
+    "106": { "name": "Heating",     "unit": "",    "map": { "0": "idle", "1": "heating" }, "writable": false },
+    "254": { "name": "WiFi RSSI",   "unit": "dBm",                                          "writable": false }
+  }
+}

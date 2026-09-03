@@ -1,0 +1,9 @@
+# Live credentials — never commit or share this file.
+config.json
+
+# Local captures may contain your credentials in encrypted form.
+*.pcap
+*.pcapng
+
+__pycache__/
+*.pyc

@@ -1,0 +1,22 @@
+# 真实配置 —— 绝不入库
+config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# 抓包与日志
+*.pcap
+*.pcapng
+*.log
+device_logs/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

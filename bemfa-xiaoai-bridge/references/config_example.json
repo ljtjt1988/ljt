@@ -1,0 +1,35 @@
+{
+  "bemfa_uid": "<BEMFA_UID>",
+  "bemfa_host": "bemfa.com",
+  "bemfa_port": 9501,
+  "ha_url": "http://<HA_HOST>:8123",
+  "ha_auth_path": "/path/to/home-assistant/.storage/auth",
+  "mqtt_username": null,
+  "mqtt_password": null,
+  "devices": [
+    {
+      "name": "冲凉水",
+      "topic": "<DEVICE_TOPIC_SWITCH>",
+      "entity_id": "switch.some_ha_switch",
+      "type": "switch"
+    },
+    {
+      "name": "高温挡",
+      "topic": "<DEVICE_TOPIC_TEMP_HIGH>",
+      "value": 65,
+      "type": "yunho_temp"
+    },
+    {
+      "name": "中温挡",
+      "topic": "<DEVICE_TOPIC_TEMP_MID>",
+      "value": 45,
+      "type": "yunho_temp"
+    },
+    {
+      "name": "低温挡",
+      "topic": "<DEVICE_TOPIC_TEMP_LOW>",
+      "value": 40,
+      "type": "yunho_temp"
+    }
+  ]
+}
